@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="toptabs">
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="comentarii.html" class="active">Comentarii</a></li>
+            <li><a onclick="cont()" href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <input type="text" name="name" id="formName" placeholder="Nume">
+        <input type="text" name="name" id="formC" placeholder="Comentariu">
+        <input type="text" name="url" id="formUrl" placeholder="URL Poza">
+        <button type="button" id="addButton">Add</button>
+        <button type="button" id="updateButton" disabled>Update</button>
+    </div>
+    <div id='list' class="list"></div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

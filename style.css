@@ -1,0 +1,226 @@
+html{
+  height: 100%;
+  margin: 0;
+}
+body {
+  line-height: 1;
+  margin: 0px;
+}
+
+nav ul {
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  align-items: center;
+}
+
+ul.topnav li {
+  list-style: none;
+  float: left;
+}
+
+ul.topnav li.topnav-right {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: capitalize;
+  color:black;
+}
+a {
+  width: 120px;
+}
+
+#titlu  {
+  color: blue;
+  text-align: center;
+  font-family:"New Times Roman";
+  text-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px;
+}
+
+/* menu*/
+.topnav {
+    background-color: rgb(212, 105, 16);
+    overflow: hidden;
+}
+
+.topnav a li{
+  text-align: center;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .it{
+      flex-flow: nowrap;  
+    }    
+    .flex-item {
+      flex-grow:0;
+    }
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-bottom: 150px;
+  padding-left: 50px;
+}
+
+.flex-item {
+  margin-top: 60px;
+  height: 200px;
+  width: 200px;
+  padding: -20px;
+  display: flex;
+  justify-content: stretch;
+}
+
+/*text iteme*/
+.it{
+  position: relative;
+  color: blue;
+  margin: auto;
+  /* padding-left: 30%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-right: 35%; */
+  font-size: 15px;
+  width: 200px;
+  display: flex;
+  flex: 3 1 auto;
+  text-align: center;
+}
+
+/* .pret{
+  color: red;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  width: 100px;
+  height : 100px;
+} */
+
+/*footer*/
+.flex-cont {
+  border-top: 2px outset rgb(34, 25, 164);
+  background-color: yellowgreen;
+  display: flex;
+  height: 30px;
+  text-indent: 60px;
+  letter-spacing: 1px;
+  word-spacing: 30px;
+}
+
+/*slideshow*/
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 200px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*text sub slideshow*/
+.text {
+  color: blue;
+  font-size: 15px;
+  padding: 0px 10px;
+  position: relative;
+  bottom: 2px;
+  width: 90%;
+  text-align: center;
+  padding-left: 30px;
+}

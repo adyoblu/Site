@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "name": "adrian",
+      "comentariu": "adrian1",
+      "img": "https://static2.evz.ro/image-original-605-388/cache/2018-01/benjamin-everett-2-465x390.jpg",
+      "id": 1
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
